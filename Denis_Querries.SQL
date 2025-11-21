@@ -1,57 +1,3 @@
-SELECT *
-FROM orderdetails;
-
-SELECT *
-FROM orders;
-
-SELECT orderNumber, status
-FROM orders;
-
-SELECT orderNumberorderDaterequiredDate
-FROM ordersDetails;
-
-SELECT orderNumber, orderDate,requiredDate
-FROM ordersDetails;
-
-SELECT orderNumber, status
-FROM orders;
-
-SELECT orderNumber, productCode,priceEach
-FROM orderdetails;
-
-SELECT orderNumber, orderDate,requiredDate
-FROM ordersDetails;
-
-SELECT orderNumber, productCode,priceEach
-FROM orderdetails;
-
-SELECT orderNumber, orderDate,requiredDate
-FROM ordersDetails;
-
-SELECT orderNumber, productCode,priceEach
-FROM orderdetails;
-
-SELECT orderNumber, orderDate,requiredDate
-FROM orderdetails;
-
-SELECT orderNumber
-FROM orderdetails;
-
-SELECT orderNumber
-FROM orderdetails, offices;
-
-SELECT orderNumber,city
-FROM orderdetails, offices;
-
-SELECT orderNumber, country, city
-FROM orderdetails, offices;
-
-SELECT orderNumber, productCode,priceEach
-FROM orderdetails;
-
-SELECT DISTINCT orderNumber, country, city
-FROM orderdetails, offices;
-
 SELECT orderNumber, productCode,priceEach,quantityOrdered, priceEach*quantityOrdered AS 'total cos'
 FROM orderdetails;
 
@@ -454,4 +400,5 @@ SELECT employees.employeeNumber, employees.firstName, employees.lastName, COUNT(
 FROM employees, customers
 GROUP BY employeeNumber
 HAVING orders_for_worker &gt;
+
 
